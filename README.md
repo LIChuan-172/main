@@ -1,0 +1,1 @@
+the main repo for testing loading vue component from remote server

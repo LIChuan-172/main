@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- <script
+      type="module"
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.esm-browser.min.js"
+    ></script> -->
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "/node_modules/.vite/deps/vue.js?v=ebff5735"
+        }
+      }
+    </script>
+    <!-- <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.esm-browser.min.js"
+        }
+      }
+    </script> -->
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

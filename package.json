@@ -1,0 +1,20 @@
+{
+  "name": "main",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build && mkdir dist\\node_modules\\.vite\\deps && copy node_modules\\.vite\\deps\\vue.js dist\\node_modules\\.vite\\deps",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0",
+    "vue-tsc": "^1.2.0"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  }
+}
